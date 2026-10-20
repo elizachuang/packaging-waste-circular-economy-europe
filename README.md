@@ -4,7 +4,7 @@
 
 **Which countries are furthest from the EU packaging recycling target, and is progress coming from recycling more or from producing less waste?**
 
-[![Packaging waste dashboard](images/dashboard.png)](https://public.tableau.com/views/SustainabilitypackagingwasteandthecirculareconomyinEurope/failingcountries?:language=en-GB&:display_count=n)
+[![Packaging waste dashboard](images/dashboard.png)](https://public.tableau.com/views/PackagingwasteinEurope/Dashboard-recycleandwaste?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 *Click the image to open the live dashboard.*
 
@@ -194,7 +194,7 @@ I haven't researched why France, Sweden and Germany improved.
 
 ## Dashboard
 
-**[Open the live dashboard](https://public.tableau.com/views/SustainabilitypackagingwasteandthecirculareconomyinEurope/failingcountries?:language=en-GB&:display_count=n)**
+**[Open the live dashboard](https://public.tableau.com/views/PackagingwasteinEurope/Dashboard-recycleandwaste?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
 
 - Headline numbers: 13 of 26 below target, EU27 at 67.4%, 26 countries with 2023 data
 - Recycling rate per country, split into "meets" and "below" target
