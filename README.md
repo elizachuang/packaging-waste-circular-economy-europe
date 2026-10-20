@@ -88,11 +88,11 @@ I keep three things apart: **data** (my numbers), **sources** (what published re
 
 ### 2. Why Malta, Greece and Romania are behind
 
-**Sources:** the European Environment Agency (EEA) early-warning reports (2023, using 2018–2021 data) and Eurostat's country notes. They explain the situation then, not the 2023 numbers.
+**Sources:** the European Environment Agency (EEA) early-warning reports (2023, using 2018–2021 data) and Eurostat's country notes. They explain the situation then, not the 2023 numbers. The EEA has since moved these pages, so I name them without a link.
 
-- **Malta** (+7.7 points, still low): low collection of plastic (about 11%) and metal, "mainly due to the lack of related infrastructure"; no domestic plastic recycling plant, so recycling is measured by exports; a fire at the national sorting plant in 2017; only a voluntary deposit scheme for wine bottles. New since late 2022: a deposit scheme for drink containers, mandatory separation and gate fees for commercial waste. ([EEA](https://www.eea.europa.eu/publications/many-eu-member-states/malta), [Eurostat](https://ec.europa.eu/eurostat/cache/metadata/EN/env_waspac_esmswap_mt.htm))
-- **Greece** (−15.6 points): low collection (about 15% for glass, 11% for plastic); separation for businesses delayed; unclear split of duties between producers and cities; low trust that sorted waste gets recycled; a low landfill fee (EUR 20 per tonne); possible under-counting of packaging. ([EEA](https://www.eea.europa.eu/publications/many-eu-member-states/greece))
-- **Romania** (−16.8 points): a tax on packaging gives companies a reason to under-report; data that doesn't match municipal waste data; weak enforcement; low landfill tax; a deposit scheme only from October 2022. Eurostat notes "better identification of companies placing packaging on the market". ([EEA](https://eea.europa.eu/publications/many-eu-member-states/romania), [Eurostat](https://ec.europa.eu/eurostat/cache/metadata/EN/env_waspac_esmswap_ro.htm))
+- **Malta** (+7.7 points, still low): low collection of plastic (about 11%) and metal, "mainly due to the lack of related infrastructure"; no domestic plastic recycling plant, so recycling is measured by exports; a fire at the national sorting plant in 2017; only a voluntary deposit scheme for wine bottles. New since late 2022: a deposit scheme for drink containers, mandatory separation and gate fees for commercial waste. (EEA country profile, [Eurostat](https://ec.europa.eu/eurostat/cache/metadata/EN/env_waspac_esmswap_mt.htm))
+- **Greece** (−15.6 points): low collection (about 15% for glass, 11% for plastic); separation for businesses delayed; unclear split of duties between producers and cities; low trust that sorted waste gets recycled; a low landfill fee (EUR 20 per tonne); possible under-counting of packaging. (EEA country profile)
+- **Romania** (−16.8 points): a tax on packaging gives companies a reason to under-report; data that doesn't match municipal waste data; weak enforcement; low landfill tax; a deposit scheme only from October 2022. Eurostat notes "better identification of companies placing packaging on the market". (EEA country profile, [Eurostat](https://ec.europa.eu/eurostat/cache/metadata/EN/env_waspac_esmswap_ro.htm))
 
 **My view:** for Romania, counting more companies means more packaging in the total. That alone lowers the rate. So part of the fall may not be less recycling. I can't prove it from my data.
 
@@ -122,7 +122,7 @@ I keep three things apart: **data** (my numbers), **sources** (what published re
 Of the 26 countries, only Norway, Estonia, France, Sweden and Germany improved on both.
 
 **Iceland: mostly a reporting change.**
-- *Sources:* from 2023, Iceland's producer scheme covers glass, metal and wood, and crushed glass used as building fill now counts as recycled. Eurostat lists breaks in the data (for example, wood generated +478%) and expects corrections. Separate collection also became mandatory in 2023. ([EEA](https://www.eea.europa.eu/publications/many-eu-member-states/iceland), [Eurostat](https://ec.europa.eu/eurostat/cache/metadata/EN/env_waspac_esmswap_is.htm))
+- *Sources:* from 2023, Iceland's producer scheme covers glass, metal and wood, and crushed glass used as building fill now counts as recycled. Eurostat lists breaks in the data (for example, wood generated +478%) and expects corrections. Separate collection also became mandatory in 2023. (EEA country profile, [Eurostat](https://ec.europa.eu/eurostat/cache/metadata/EN/env_waspac_esmswap_is.htm))
 - *Data:* 42% in 2022, 77% in 2023. Flagged "definition differs" (`d`) for 2020–2023.
 - *My view:* I don't call Iceland "most improved".
 
