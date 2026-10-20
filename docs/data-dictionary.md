@@ -1,69 +1,52 @@
 # Data dictionary
 
-Columns in my final tables, taken from the Google Sheets workbook. All amounts are kg per person (Eurostat unit `KG_HAB`). Rates and shares are decimals (0.65 = 65%).
+Amounts are kg per person. Rates are decimals (0.65 = 65%).
 
-## Fact table (`fact_packaging`, exported as `tableau_data`)
+## Fact table (`fact_packaging` / `tableau_data`)
 
-One row per country and year: 31 reporters × 2014–2023 (302 rows). Source: Eurostat `env_waspac`, material `W1501`.
+One row per country and year, 2014–2023 (302 rows).
 
-| Column | Type | Description |
-|---|---|---|
-| `country_name` | Text | Reporting country, or the EU27 total ("European Union - 27 countries (from 2020)"). The EU27 total is left out of country rankings. |
-| `year` | Number | Reference year, 2014–2023 |
-| `material` | Text | Eurostat material code. Always `W1501` (all packaging) in this version |
-| `generated` | Number | Packaging waste generated |
-| `recovery` | Number | Total recovered (recycling plus energy recovery plus other recovery) |
-| `energy_recovery` | Number | Packaging waste burned to produce energy |
-| `recovery - other` | Number | Other recovery |
-| `recycling` | Number | Packaging waste recycled (in the country, in other EU states and outside the EU) |
-| `recycled in another EU state` | Number | Recycled in another EU member state. Blank for many rows |
-| `recycled in the country` | Number | Recycled in the reporting country. Blank for many rows |
-| `recycling outside the EU` | Number | Recycled outside the EU. Blank for many rows |
-| `repair` | Number | Repair (reported for wood). Blank for most rows |
-| `recycle_rate` | Decimal | `recycling` ÷ `generated` |
-| `target_2025` | Decimal | Legal target for this material, looked up from the targets table (0.65 for `W1501`) |
-| `gap_to_target` | Decimal | `recycle_rate` − `target_2025`. Negative = still behind |
-| `energy_recovery_share` | Decimal | `energy_recovery` ÷ `generated` |
-| `export_dependency` | Decimal | `recycling outside the EU` ÷ `recycling`. Blank when either is missing |
-| `kg_per_person_to_target` | Number | (`target_2025` − `recycle_rate`) × `generated`. Blank when the target is met |
-| `status` | Text | "Meets target" (rate ≥ 65%) or "Below target". Only in `tableau_data` |
+| Column | Meaning |
+|---|---|
+| `country_name` | Country, or the EU27 total (left out of rankings) |
+| `year` | 2014–2023 |
+| `material` | Always `W1501`, all packaging |
+| `generated` | Packaging waste generated |
+| `recovery` | Total recovered (recycling + energy recovery + other) |
+| `energy_recovery` | Burned for energy |
+| `recovery - other` | Other recovery |
+| `recycling` | Recycled, anywhere |
+| `recycled in another EU state` | Recycled in another EU country |
+| `recycled in the country` | Recycled at home |
+| `recycling outside the EU` | Recycled outside the EU |
+| `repair` | Repair (mostly wood) |
+| `recycle_rate` | recycling ÷ generated |
+| `target_2025` | 0.65 |
+| `gap_to_target` | rate − target |
+| `energy_recovery_share` | energy recovery ÷ generated |
+| `export_dependency` | recycled outside the EU ÷ recycling |
+| `kg_per_person_to_target` | Extra kg to reach the target; blank if met |
+| `status` | "Meets target" or "Below target" |
 
-Not in the sheet: the 2018-vs-2023 change (a Tableau calculated field), and the five-year rolling average and decoupling flag (calculated from this table for the README findings). See [methodology.md](methodology.md).
+Many of the "recycled in/outside" and `repair` cells are blank in Eurostat's data.
 
-Not yet in the table (Planned): the Eurostat observation flag.
+## Eurostat rates (`fact_rate`)
 
-## Published rate table (`fact_rate`)
+Eurostat's published rate, used only for the cross-check. 2009–2018, in percent (65.9 = 65.9%).
 
-Eurostat's own recycling rate, used only for the cross-check. Source: `env_waspacr`, material `W1501`, unit `RT_TGT2025`, 2009–2018 (303 rows).
+Columns: `country_name`, `year`, `waste` (`W1501`), `recycle_rate`.
 
-| Column | Type | Description |
-|---|---|---|
-| `country_name` | Text | Reporting country or EU27 total |
-| `year` | Text | Reference year |
-| `waste` | Text | Material code (`W1501`) |
-| `recycle_rate` | Number | Eurostat's published rate, in percent (65.9 = 65.9%). Note: a percent here, not a decimal as in the fact table |
+## Targets (`targets`)
 
-## Targets table (`targets`)
+Columns: `material_code`, `material_name`, `target_year`, `target_pct` (0.65 for 2025, 0.70 for 2030), `compare_with`, `legal_reference`, `source_url`, `date_checked` (2026-10-16), `helper_text` (lookup key).
 
-| Column | Type | Description |
-|---|---|---|
-| `material_code` | Text | Eurostat material code (for example `W1501` all packaging, `W150102` plastic) |
-| `material_name` | Text | Material name |
-| `target_year` | Number | 2025 or 2030 |
-| `target_pct` | Decimal | Target rate (for `W1501`: 0.65 for 2025, 0.70 for 2030) |
-| `compare_with` | Text | Which rate to compare with the target ("reported rate" or "adjusted rate") |
-| `legal_reference` | Text | Directive 94/62/EC Art. 6(1)(f)-(i), as amended by Directive (EU) 2018/852 |
-| `source_url` | URL | EUR-Lex summary |
-| `date_checked` | Date | 2026-10-16 |
-| `helper_text` | Text | Lookup key: material code + "\|" + target year (used by `XLOOKUP`) |
-
-## Eurostat observation flags (raw data)
+## Eurostat flags
 
 | Flag | Meaning |
 |---|---|
-| `b` | Break in series: measurement changed, not fully comparable with earlier years |
+| `b` | Break in series: measurement changed |
 | `d` | Definition differs |
 | `e` | Estimated |
 | `p` | Provisional |
-| `i` | Value imputed (estimated) by Eurostat or other receiving agencies. In my data, only the EU27 total for 2023 |
-| `be`, `bd` | Combinations of the flags above |
+| `i` | Imputed by Eurostat (only the EU27 total, 2023) |
+| `be`, `bd` | Combinations |
