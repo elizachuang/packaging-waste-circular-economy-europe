@@ -1,6 +1,6 @@
 # Packaging Waste and the Circular Economy in Europe
-<img width="auto" height="auto" alt="A horizontal banner with a dark blue background featuring bold, white pixelated retro-style text in the center that reads "Packaging Waste in Europe". On both the left and right sides of the text, there are repeating patterns of dark blue and grey triangular recycling symbols, each enclosing a vertical plastic bottle icon." src="images/cover_packaging-waste.png" />
 
+<img src="images/cover_packaging-waste.png" width="100%" alt="Banner with white pixel-style text 'Packaging Waste in Europe' on a dark blue background, framed by recycling symbols with plastic bottle icons." />
 
 **Which countries are furthest from the EU packaging recycling target, and is progress coming from recycling more or from producing less waste?**
 
