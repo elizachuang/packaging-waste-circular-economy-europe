@@ -63,7 +63,7 @@ A learning portfolio project. Eurostat data, 2014–2023. I compare 2018 with 20
 | Change in recycling rate, 2018–2023 | Higher | Countries already near the top have less room to grow. |
 | Kg per person still to recycle | Lower | Only for countries below 65%. Per person, not total tonnes. |
 | Five-year average rate (2019–2023) | Higher | Smooths one-off jumps. Not on the dashboard. |
-| Decoupling | "Yes" | Rate up and waste down, year on year. Partly built into the maths. Not on the dashboard. |
+| Recycled more, wasted less | "Yes" | Rate up and waste per person down, compared with the year before. Partly built into the maths. Not on the dashboard. |
 | Energy recovery share | Depends | Waste burned for energy. Better than landfill, worse than recycling. In the fact table, not on the dashboard yet. |
 | Export dependency | Depends | Share recycled outside the EU. Exported waste counts as recycled, so a high rate may look better than it is. In the fact table, not on the dashboard yet. |
 
@@ -165,12 +165,12 @@ I haven't researched why France, Sweden and Germany improved.
 
 **My view:** Romania has the lowest rate, but Malta needs the most, because Malta produces more waste per person (175.6 kg vs 125.4 kg). Austria and Luxembourg are almost there.
 
-### 5. Decoupling
+### 5. Recycled more, wasted less
 
 **Data**
-- 62 of 259 year-to-year pairs (24%) show decoupling.
+- In 62 of 259 cases (24%), a country recycled more and wasted less than the year before.
 - Most often: Luxembourg (5 years), then France, Estonia and Germany (4 each).
-- From 2022 to 2023, 15 countries decoupled: Czechia, France, Germany, Italy, Latvia, Lithuania, Luxembourg, the Netherlands, Norway, Portugal, Romania, Slovakia, Slovenia, Spain and Sweden.
+- From 2022 to 2023, 15 countries did it: Czechia, France, Germany, Italy, Latvia, Lithuania, Luxembourg, the Netherlands, Norway, Portugal, Romania, Slovakia, Slovenia, Spain and Sweden.
 
 **My view:** one good year means little, because less waste lifts the rate by itself. Doing it year after year (Luxembourg, France, Estonia, Germany) is a stronger sign.
 

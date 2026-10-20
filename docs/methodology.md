@@ -12,7 +12,7 @@ All numbers are Eurostat `env_waspac`, all packaging (`W1501`), in kg per person
 | Change in rate (points) | (rate 2023 − rate 2018) × 100 |
 | Waste change % | waste 2023 ÷ waste 2018 − 1 |
 | Five-year average | average rate of the last five years (2019–2023 for 2023), only if all five exist |
-| Decoupling | "Yes" when, from one year to the next, the rate went up and waste per person went down |
+| Recycled more, wasted less | "Yes" when, from one year to the next, the rate went up and waste per person went down |
 | Energy recovery share | energy recovery ÷ waste generated |
 | Export dependency | recycled outside the EU ÷ total recycled |
 
