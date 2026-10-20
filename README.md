@@ -239,11 +239,25 @@ Some terms used below:
 
 **The other improvers: Estonia, France, Sweden, Germany**
 
-Not researched yet (see Next steps). Note: Estonia carries a break flag (`b`) for 2019 in my raw data.
+*What the data shows:* all 8 of Estonia's rows for 2019 carry the break-in-series flag (`b`). Estonia's rate went from 60.4% in 2018 to 66.2% in 2019.
+
+*My interpretation:* a break flag means the way Estonia measured its numbers changed in 2019. So part of Estonia's gain may come from that change, not only from more recycling. I have not found a source that confirms what changed.
+
+Why France, Sweden and Germany improved: not researched yet (see Next steps).
 
 **Finland and Cyprus**
 
-Not researched yet, beyond the 2020 method change described in Finding 2 (see Next steps).
+*What the data shows:*
+
+- Finland: waste per person jumped from 131.4 kg in 2019 to 157.7 kg in 2020, while its recycling rate fell from 68.5% to 58.4%.
+- Cyprus: its values for 2020 to 2023 carry the flags `e` (estimated) and `be` (break in series and estimated).
+
+*My interpretation:*
+
+- Finland: 2020 is the year Eurostat's stricter counting method started (see Finding 2). A sudden jump in waste generated, at the same time as a drop in the rate, fits a larger total under the new rules (a bigger denominator) better than a sudden fall in recycling. I cannot prove this from my data.
+- Cyprus: estimated values are less reliable, so Cyprus's fall should be read with care.
+
+Why Finland and Cyprus fell, beyond this: not researched yet (see Next steps).
 
 ### Finding 4: How much more each country needs to recycle
 
