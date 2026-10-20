@@ -19,7 +19,7 @@ A learning portfolio project. Eurostat data, 2014–2023. I compare 2018 with 20
 
 1. Which countries are furthest from the 65% target in 2023?
 2. Which countries improved or got worse between 2018 and 2023?
-3. In which years did a country's recycling rate go up while its waste per person went down? I call this **decoupling**.
+3. In which years did a country's recycling rate go up while its waste per person went down?
 4. How many kg per person would each country still need to recycle to reach 65%?
 
 ## Tools
