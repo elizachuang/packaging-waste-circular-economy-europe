@@ -61,20 +61,20 @@ A learning portfolio project. Eurostat data, 2014–2023. I compare 2018 with 20
 
 **Recycling rate** = waste recycled ÷ waste generated. I show changes in **percentage points**: 50% to 61% is +11 points (not +22%).
 
-| KPI | Better when | Notes | Status |
-|---|---|---|---|
-| Waste per person (kg) | Lower | Rich or trade-heavy countries can score high, so compare a country with its own past too. | Built |
-| Recycling rate | Higher | It also goes up if waste falls while recycling stays the same, so read it with waste per person. | Built |
-| Gap to target | Higher | Rate minus 65%. Negative means still behind. | Built |
-| Change in recycling rate, 2018–2023 | Higher | Countries already near the top have less room to grow. | Built |
-| Kg per person still to recycle | Lower | Only for countries below 65%. Per person, not total tonnes. | Built |
-| Five-year average rate (2019–2023) | Higher | Smooths one-off jumps. Not on the dashboard. | Built |
-| Decoupling years | "Yes" | Country-years where the recycling rate rose and waste per person fell compared with the year before. Partly built into the maths. Not on the dashboard. | Built |
-| Energy recovery share | Depends | Waste burned for energy. Better than landfill, worse than recycling. In the fact table. | Built |
-| Export dependency | Depends | Share recycled outside the EU. Exported waste counts as recycled, so a high rate may look better than it is. Dashboard 2. | Built |
-| Share recycled abroad | Depends | (recycled in another EU state + recycling outside the EU) ÷ recycling. Dashboard 2. | Built |
-| Share recycled outside the EU | Depends | recycling outside the EU ÷ recycling. Same values as export dependency. Dashboard 2. | Built |
-| Not recovered share | Lower | (generated − recovery) ÷ generated. Not the same as landfill. Dashboard 2. | Built |
+| KPI | Better when | Notes |
+|---|---|---|
+| Waste per person (kg) | Lower | Rich or trade-heavy countries can score high, so compare a country with its own past too. |
+| Recycling rate | Higher | It also goes up if waste falls while recycling stays the same, so read it with waste per person. |
+| Gap to target | Higher | Rate minus 65%. Negative means still behind. |
+| Change in recycling rate, 2018–2023 | Higher | Countries already near the top have less room to grow. |
+| Kg per person still to recycle | Lower | Only for countries below 65%. Per person, not total tonnes. |
+| Five-year average rate (2019–2023) | Higher | Smooths one-off jumps. Not on the dashboard. |
+| Decoupling years | "Yes" | Country-years where the recycling rate rose and waste per person fell compared with the year before. Partly built into the maths. Not on the dashboard. |
+| Energy recovery share | Depends | Waste burned for energy. Better than landfill, worse than recycling. In the fact table. |
+| Export dependency | Depends | Share recycled outside the EU. Exported waste counts as recycled, so a high rate may look better than it is. Dashboard 2. |
+| Share recycled abroad | Depends | (recycled in another EU state + recycling outside the EU) ÷ recycling. Dashboard 2. |
+| Share recycled outside the EU | Depends | recycling outside the EU ÷ recycling. Same values as export dependency. Dashboard 2. |
+| Not recovered share | Lower | (generated − recovery) ÷ generated. Not the same as landfill. Dashboard 2. |
 
 Decoupling is measured year by year. The 2018 to 2023 comparison is a separate check.
 
@@ -235,6 +235,8 @@ More detail in [docs/destinations.md](docs/destinations.md).
 
 **[Open the live dashboard](https://public.tableau.com/views/PackagingwasteinEurope/Dashboard-recycleandwaste?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
 
+[![Dashboard 1](images/dashboard.png)](https://public.tableau.com/views/PackagingwasteinEurope/Dashboard-recycleandwaste?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
 - Headline numbers: 13 of 26 below target, EU27 at 67.4%, 26 countries with 2023 data
 - Recycling rate per country, split into "meets" and "below" target
 - Map of the gap to 65%
@@ -256,14 +258,6 @@ The embed code for dashboard 1 is in [docs/tableau-embed.html](docs/tableau-embe
 1. The bar shows where each country's recycled packaging waste is processed.
 2. The map shows only the five countries above 50% outside the EU.
 3. "Packaging" means all materials together (plastic, paper and cardboard, glass, metal, wood), material code `W1501`.
-
-## Next steps
-
-All planned, not done yet.
-
-- Check destination countries with UN Comtrade (reporter = the five countries, partner = destination), then add the result to [docs/destinations.md](docs/destinations.md).
-- Add a chart showing what happens to each country's waste (recycled, energy, other recovery, not recovered).
-- Related work on plastic waste trade, using UN Comtrade (HS 3915): [Plastic-Waste-Analysis](https://github.com/elizachuang/Plastic-Waste-Analysis).
 
 ## Contact
 
