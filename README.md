@@ -16,6 +16,9 @@ A learning portfolio project. Eurostat data, 2014–2023. I compare 2018 with 20
 - **Romania (41.0%), Malta (43.4%) and Greece (48.0%) are furthest behind.** Romania and Greece also fell the most since 2018. Part of that fall may come from a stricter counting method Eurostat started in 2020.
 - **The biggest gain needs a warning.** Iceland rose 26.1 points, but most of that is a change in how Iceland reports.
 - **Only five countries recycled more and produced less waste:** Norway, Estonia, France, Sweden and Germany.
+- **12 of 26 countries send more than half of their recycled packaging waste abroad** (to another EU state or outside the EU).
+- **5 of 26 countries send more than half of their recycling outside the EU:** Liechtenstein 100%, Ireland 62%, Malta 60%, Greece 55%, Cyprus 53%. For the EU as a whole the share is 8.7%.
+- **17.6% of EU packaging waste was not recovered in 2023.** It was not recycled, used for energy or recovered in another way. This is not the same as landfill.
 
 ## Questions
 
@@ -23,11 +26,12 @@ A learning portfolio project. Eurostat data, 2014–2023. I compare 2018 with 20
 2. Which countries improved or got worse between 2018 and 2023?
 3. In which years did a country's recycling rate go up while its waste per person went down?
 4. How many kg per person would each country still need to recycle to reach 65%?
+5. Where does packaging waste end up, and which countries rely on others to recycle it?
 
 ## Tools
 
 - **Google Sheets:** cleaning and KPIs ([my sheet](https://docs.google.com/spreadsheets/d/1-qQ3Yn0c9Sn_sHjXvETQ8XxnvaGpWN-r03ozD3PPOw0/edit?usp=sharing))
-- **Tableau Public:** the dashboard
+- **Tableau Public:** two dashboards
 - **Claude Code:** help with documentation and checking
 
 ## Data
@@ -51,7 +55,7 @@ A learning portfolio project. Eurostat data, 2014–2023. I compare 2018 with 20
 4. Built a fact table (one row per country and year) and a targets table.
 5. Calculated the KPIs with formulas (see [methodology](docs/methodology.md) and [data dictionary](docs/data-dictionary.md)).
 6. Checked my rates against Eurostat's published rates.
-7. Built the dashboard in Tableau Public.
+7. Built two dashboards in Tableau Public.
 
 ## KPIs
 
@@ -176,6 +180,30 @@ I haven't researched why France, Sweden and Germany improved.
 
 **My view:** one good year means little, because less waste lifts the rate by itself. Doing it year after year (Luxembourg, France, Estonia, Germany) is a stronger sign.
 
+### 6. Where does packaging waste end up?
+
+**Data** (2023, kg per person, all packaging `W1501`)
+- The EU27 produced 177.8 kg of packaging waste per person. 67.4% was recycled, 15.0% used for energy and 0.1% recovered in other ways. 17.6% (31.2 kg per person) was not recovered. "Not recovered" is waste generated minus waste recovered.
+- 26 countries have 2023 data. Bulgaria, Croatia, Hungary and Poland are missing.
+- 12 of 26 countries recycle more than half of their packaging waste abroad. 5 of 26 recycle more than half outside the EU. For the EU27, the share outside the EU is 8.7%.
+- Luxembourg recycles 0% outside the EU, but all of it in another EU state.
+- I found no clear link between how much a country recycles outside the EU and how its recycling rate changed from 2018 to 2023. The link is weak and not statistically significant. TODO: confirm the correlation value.
+
+**My view**
+- Small countries recycle abroad mostly in other EU states. So "outside the EU" alone understates how much a country relies on others. That's why the dashboard shows all three shares.
+- The 50% cut-off is my own choice, not an EU rule.
+- Recycling abroad doesn't explain who improved. I don't claim a cause either way.
+
+## Where does it go?
+
+Eurostat gives the share sent outside the EU, but not the destination countries.
+
+- **Liechtenstein:** recycled in Switzerland (Eurostat country metadata).
+- **Cyprus:** in 2022, its waste exports (all waste, not only packaging) went to non-EU countries including India, Lebanon, Egypt, Thailand, Pakistan and Israel (Cyprus Business News). TODO: add the article link. For plastic only, an [IUCN report](https://iucn.org/resources/file/governing-plastic-waste-management-republic-cyprus) (2022, data year not stated) says about half of exports go to Greece and 44% to unnamed Asian countries.
+- **Ireland, Malta, Greece:** destinations not named in the Eurostat notes. Not yet verified.
+
+More detail in [docs/destinations.md](docs/destinations.md).
+
 ## Data checks and limits
 
 **Checks**
@@ -192,7 +220,9 @@ I haven't researched why France, Sweden and Germany improved.
 - The 2020 method change and breaks in the data make comparisons across 2020 less reliable.
 - Averages across countries are unweighted: each country counts the same.
 
-## Dashboard
+## Dashboards
+
+### Dashboard 1: Recycling rates and the 65% target
 
 **[Open the live dashboard](https://public.tableau.com/views/PackagingwasteinEurope/Dashboard-recycleandwaste?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
 
@@ -203,7 +233,20 @@ I haven't researched why France, Sweden and Germany improved.
 - Extra kg per person needed to reach 65%
 - Change in recycling rate per country, 2018–2023
 
-The embed code is in [docs/tableau-embed.html](docs/tableau-embed.html), for use on a website. GitHub READMEs can't show it.
+The embed code for dashboard 1 is in [docs/tableau-embed.html](docs/tableau-embed.html), for use on a website. GitHub READMEs can't show it.
+
+### Dashboard 2: Where does Europe's packaging waste end up, and who relies on others to recycle it?
+
+[![Dashboard 2](images/dashboard-2-where-does-packaging-end-up.png)](https://public.tableau.com/views/Wheredoeswasteendup/Dashboard-wheredoesthepackagingendup?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+- Three headline numbers: 12 of 26 countries send more than half abroad, 5 of 26 send more than half outside the EU, 17.6% of EU packaging waste not recovered
+- Map of the five countries that recycle most outside the EU, with the EU overall at 8.7%
+- 100% stacked bar of where each country's recycling happens (in the country, in another EU state, outside the EU), sorted by share recycled abroad
+
+**How to read it**
+1. The bar shows where each country's recycled packaging waste is processed.
+2. The map shows only the five countries above 50% outside the EU.
+3. "Packaging" means all materials together (plastic, paper and cardboard, glass, metal, wood), material code `W1501`.
 
 ## Contact
 
