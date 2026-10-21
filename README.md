@@ -235,6 +235,8 @@ More detail in [docs/destinations.md](docs/destinations.md).
 
 **[Open the live dashboard](https://public.tableau.com/views/PackagingwasteinEurope/Dashboard-recycleandwaste?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
 
+[![Dashboard 1](images/dashboard.png)](https://public.tableau.com/views/PackagingwasteinEurope/Dashboard-recycleandwaste?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
 - Headline numbers: 13 of 26 below target, EU27 at 67.4%, 26 countries with 2023 data
 - Recycling rate per country, split into "meets" and "below" target
 - Map of the gap to 65%
