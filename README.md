@@ -88,20 +88,19 @@ I keep three things apart: **data** (my numbers), **sources** (what published re
 - 26 countries have 2023 data: 13 meet 65%, 13 do not. Bulgaria, Croatia, Hungary and Poland have no 2023 data.
 - Lowest: Romania 41.0%, Malta 43.4%, Greece 48.0%.
 - Highest: Belgium 79.3%, Iceland 77.3%, Czechia 74.7%. Belgium also has the highest five-year average (about 80%).
-- The EU27 reached 67.4%. Eurostat flags this value as `i`, "imputed": Eurostat filled in part of it.
+- The EU27 reached 67.4%.
 
 **My view**
 - "The EU met the target" and "half the countries did not" are both true.
 - Bulgaria and Hungary were low in 2022, so "lowest in 2023" means lowest among those that reported.
-- The EU27 value is partly estimated. My guess is that this covers the four missing countries.
 
 ### 2. Why Malta, Greece and Romania are behind
 
-**Sources:** the European Environment Agency (EEA) early-warning reports (2023, using 2018–2021 data) and Eurostat's country notes. They explain the situation then, not the 2023 numbers. The EEA has since moved these pages, so I name them without a link.
+**Sources:** the European Environment Agency (EEA) early-warning reports (2023, using 2018–2021 data) and Eurostat's country notes. They explain the situation then, not the 2023 numbers.
 
-- **Malta** (+7.7 points, still low): low collection of plastic (about 11%) and metal, "mainly due to the lack of related infrastructure"; no domestic plastic recycling plant, so recycling is measured by exports; a fire at the national sorting plant in 2017; only a voluntary deposit scheme for wine bottles. New since late 2022: a deposit scheme for drink containers, mandatory separation and gate fees for commercial waste. (EEA country profile, [Eurostat](https://ec.europa.eu/eurostat/cache/metadata/EN/env_waspac_esmswap_mt.htm))
-- **Greece** (−15.6 points): low collection (about 15% for glass, 11% for plastic); separation for businesses delayed; unclear split of duties between producers and cities; low trust that sorted waste gets recycled; a low landfill fee (EUR 20 per tonne); possible under-counting of packaging. (EEA country profile)
-- **Romania** (−16.8 points): a tax on packaging gives companies a reason to under-report; data that doesn't match municipal waste data; weak enforcement; low landfill tax; a deposit scheme only from October 2022. Eurostat notes "better identification of companies placing packaging on the market". (EEA country profile, [Eurostat](https://ec.europa.eu/eurostat/cache/metadata/EN/env_waspac_esmswap_ro.htm))
+- **Malta** (+7.7 points, still low): low collection of plastic (about 11%) and metal, "mainly due to the lack of related infrastructure"; no domestic plastic recycling plant, so recycling is measured by exports; a fire at the national sorting plant in 2017; only a voluntary deposit scheme for wine bottles. New since late 2022: a deposit scheme for drink containers, mandatory separation and gate fees for commercial waste. ([EEA](https://www.eea.europa.eu/publications/many-eu-member-states/malta), [Eurostat](https://ec.europa.eu/eurostat/cache/metadata/EN/env_waspac_esmswap_mt.htm))
+- **Greece** (−15.6 points): low collection (about 15% for glass, 11% for plastic); separation for businesses delayed; unclear split of duties between producers and cities; low trust that sorted waste gets recycled; a low landfill fee (EUR 20 per tonne); possible under-counting of packaging. ([EEA](https://www.eea.europa.eu/publications/many-eu-member-states/greece))
+- **Romania** (−16.8 points): a tax on packaging gives companies a reason to under-report; data that doesn't match municipal waste data; weak enforcement; low landfill tax; a deposit scheme only from October 2022. Eurostat notes "better identification of companies placing packaging on the market". ([EEA](https://eea.europa.eu/publications/many-eu-member-states/romania), [Eurostat](https://ec.europa.eu/eurostat/cache/metadata/EN/env_waspac_esmswap_ro.htm))
 
 **My view:** for Romania, counting more companies means more packaging in the total. That alone lowers the rate. So part of the fall may not be less recycling. I can't prove it from my data.
 
@@ -131,7 +130,7 @@ I keep three things apart: **data** (my numbers), **sources** (what published re
 **Improved on both, 2018 to 2023:** of the 26 countries, only Norway, Estonia, France, Sweden and Germany. Germany's gain is only +0.8 points.
 
 **Iceland: mostly a reporting change.**
-- *Sources:* from 2023, Iceland's producer scheme covers glass, metal and wood, and crushed glass used as building fill now counts as recycled. Eurostat lists breaks in the data (for example, wood generated +478%) and expects corrections. Separate collection also became mandatory in 2023. (EEA country profile, [Eurostat](https://ec.europa.eu/eurostat/cache/metadata/EN/env_waspac_esmswap_is.htm))
+- *Sources:* from 2023, Iceland's producer scheme covers glass, metal and wood, and crushed glass used as building fill now counts as recycled. Eurostat lists breaks in the data (for example, wood generated +478%) and expects corrections. Separate collection also became mandatory in 2023. ([EEA](https://www.eea.europa.eu/publications/many-eu-member-states/iceland), [Eurostat](https://ec.europa.eu/eurostat/cache/metadata/EN/env_waspac_esmswap_is.htm))
 - *Data:* 42% in 2022, 77% in 2023. Flagged "definition differs" (`d`) for 2020–2023.
 - *My view:* I don't call Iceland "most improved".
 
@@ -220,9 +219,14 @@ More detail in [docs/destinations.md](docs/destinations.md).
 - All packaging only. No plastic or other materials.
 - Kg per person only, no total tonnes.
 - Only the 65% target. I don't use the 2030 target (70%).
-- Exported waste counts as recycled, so a high rate doesn't prove recycling at home.
+- Eurostat counts exported waste as recycled in the national rate if it is recycled abroad, so a high rate doesn't prove recycling at home.
 - 2023 is missing 4 countries. 2022 is the last complete year.
-- The 2020 method change and breaks in the data make comparisons across 2020 less reliable.
+- Since reference year 2020, Eurostat counts recycling at the input to the final recycling process, which lowers rates. Comparisons across 2018 to 2023 cross this break. Breaks in the data for some countries add to this.
+- Eurostat names no destination countries.
+- "Outside the EU" leaves out shipments to other EU states, so it understates reliance for small countries. Luxembourg recycles 0% outside the EU but all of it in another EU state.
+- "Not recovered" is not the same as landfill.
+- Liechtenstein is very small, so its 100% reflects a small volume.
+- Destination columns are mostly empty before 2018 (22 of 30 countries in 2018, 26 of 26 in 2023; 19 countries have both years), so trends in where recycling happens are not reliable.
 - Averages across countries are unweighted: each country counts the same.
 
 ## Dashboards
@@ -252,6 +256,14 @@ The embed code for dashboard 1 is in [docs/tableau-embed.html](docs/tableau-embe
 1. The bar shows where each country's recycled packaging waste is processed.
 2. The map shows only the five countries above 50% outside the EU.
 3. "Packaging" means all materials together (plastic, paper and cardboard, glass, metal, wood), material code `W1501`.
+
+## Next steps
+
+All planned, not done yet.
+
+- Check destination countries with UN Comtrade (reporter = the five countries, partner = destination), then add the result to [docs/destinations.md](docs/destinations.md).
+- Add a chart showing what happens to each country's waste (recycled, energy, other recovery, not recovered).
+- Related work on plastic waste trade, using UN Comtrade (HS 3915): [Plastic-Waste-Analysis](https://github.com/elizachuang/Plastic-Waste-Analysis).
 
 ## Contact
 
