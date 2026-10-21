@@ -15,7 +15,7 @@ A learning portfolio project. Eurostat data, 2014–2023. I compare 2018 with 20
 - **Europe is split in half.** In 2023, 13 of 26 countries met the 65% target and 13 did not. The EU27 as a whole reached 67.4%, because big countries like Germany and France pull the total up.
 - **Romania (41.0%), Malta (43.4%) and Greece (48.0%) are furthest behind.** Romania and Greece also fell the most since 2018. Part of that fall may come from a stricter counting method Eurostat started in 2020.
 - **The biggest gain needs a warning.** Iceland rose 26.1 points, but most of that is a change in how Iceland reports.
-- **Only five countries recycled more and produced less waste:** Norway, Estonia, France, Sweden and Germany.
+- **Improved on both, 2018 to 2023:** only five countries recycled more and produced less waste per person: Norway, Estonia, France, Sweden and Germany. Germany's gain is only +0.8 points.
 - **12 of 26 countries send more than half of their recycled packaging waste abroad** (to another EU state or outside the EU).
 - **5 of 26 countries send more than half of their recycling outside the EU:** Liechtenstein 100%, Ireland 62%, Malta 60%, Greece 55%, Cyprus 53%. For the EU as a whole the share is 8.7%.
 - **17.6% of EU packaging waste was not recovered in 2023.** It was not recycled, used for energy or recovered in another way. This is not the same as landfill.
@@ -61,17 +61,22 @@ A learning portfolio project. Eurostat data, 2014–2023. I compare 2018 with 20
 
 **Recycling rate** = waste recycled ÷ waste generated. I show changes in **percentage points**: 50% to 61% is +11 points (not +22%).
 
-| KPI | Better when | Notes |
-|---|---|---|
-| Waste per person (kg) | Lower | Rich or trade-heavy countries can score high, so compare a country with its own past too. |
-| Recycling rate | Higher | It also goes up if waste falls while recycling stays the same, so read it with waste per person. |
-| Gap to target | Higher | Rate minus 65%. Negative means still behind. |
-| Change in recycling rate, 2018–2023 | Higher | Countries already near the top have less room to grow. |
-| Kg per person still to recycle | Lower | Only for countries below 65%. Per person, not total tonnes. |
-| Five-year average rate (2019–2023) | Higher | Smooths one-off jumps. Not on the dashboard. |
-| Recycled more, wasted less | "Yes" | Rate up and waste per person down, compared with the year before. Partly built into the maths. Not on the dashboard. |
-| Energy recovery share | Depends | Waste burned for energy. Better than landfill, worse than recycling. In the fact table, not on the dashboard yet. |
-| Export dependency | Depends | Share recycled outside the EU. Exported waste counts as recycled, so a high rate may look better than it is. In the fact table, not on the dashboard yet. |
+| KPI | Better when | Notes | Status |
+|---|---|---|---|
+| Waste per person (kg) | Lower | Rich or trade-heavy countries can score high, so compare a country with its own past too. | Built |
+| Recycling rate | Higher | It also goes up if waste falls while recycling stays the same, so read it with waste per person. | Built |
+| Gap to target | Higher | Rate minus 65%. Negative means still behind. | Built |
+| Change in recycling rate, 2018–2023 | Higher | Countries already near the top have less room to grow. | Built |
+| Kg per person still to recycle | Lower | Only for countries below 65%. Per person, not total tonnes. | Built |
+| Five-year average rate (2019–2023) | Higher | Smooths one-off jumps. Not on the dashboard. | Built |
+| Decoupling years | "Yes" | Country-years where the recycling rate rose and waste per person fell compared with the year before. Partly built into the maths. Not on the dashboard. | Built |
+| Energy recovery share | Depends | Waste burned for energy. Better than landfill, worse than recycling. In the fact table. | Built |
+| Export dependency | Depends | Share recycled outside the EU. Exported waste counts as recycled, so a high rate may look better than it is. Dashboard 2. | Built |
+| Share recycled abroad | Depends | (recycled in another EU state + recycling outside the EU) ÷ recycling. Dashboard 2. | Built |
+| Share recycled outside the EU | Depends | recycling outside the EU ÷ recycling. Same values as export dependency. Dashboard 2. | Built |
+| Not recovered share | Lower | (generated − recovery) ÷ generated. Not the same as landfill. Dashboard 2. | Built |
+
+Decoupling is measured year by year. The 2018 to 2023 comparison is a separate check.
 
 ## Findings
 
@@ -123,7 +128,7 @@ I keep three things apart: **data** (my numbers), **sources** (what published re
 | Greece | −15.6 | +41.0% |
 | Romania | −16.8 | +55.8% |
 
-Of the 26 countries, only Norway, Estonia, France, Sweden and Germany improved on both.
+**Improved on both, 2018 to 2023:** of the 26 countries, only Norway, Estonia, France, Sweden and Germany. Germany's gain is only +0.8 points.
 
 **Iceland: mostly a reporting change.**
 - *Sources:* from 2023, Iceland's producer scheme covers glass, metal and wood, and crushed glass used as building fill now counts as recycled. Eurostat lists breaks in the data (for example, wood generated +478%) and expects corrections. Separate collection also became mandatory in 2023. (EEA country profile, [Eurostat](https://ec.europa.eu/eurostat/cache/metadata/EN/env_waspac_esmswap_is.htm))
@@ -171,10 +176,10 @@ I haven't researched why France, Sweden and Germany improved.
 
 **My view:** Romania has the lowest rate, but Malta needs the most, because Malta produces more waste per person (175.6 kg vs 125.4 kg). Austria and Luxembourg are almost there.
 
-### 5. Recycled more, wasted less
+### 5. Decoupling years
 
 **Data**
-- In 62 of 259 cases (24%), a country recycled more and wasted less than the year before.
+- In 62 of 259 consecutive country-year pairs (24%, EU27 excluded), the recycling rate rose and waste per person fell compared with the year before.
 - Most often: Luxembourg (5 years), then France, Estonia and Germany (4 each).
 - From 2022 to 2023, 15 countries did it: Czechia, France, Germany, Italy, Latvia, Lithuania, Luxembourg, the Netherlands, Norway, Portugal, Romania, Slovakia, Slovenia, Spain and Sweden.
 
