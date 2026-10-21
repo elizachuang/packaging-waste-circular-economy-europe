@@ -257,14 +257,6 @@ The embed code for dashboard 1 is in [docs/tableau-embed.html](docs/tableau-embe
 2. The map shows only the five countries above 50% outside the EU.
 3. "Packaging" means all materials together (plastic, paper and cardboard, glass, metal, wood), material code `W1501`.
 
-## Next steps
-
-All planned, not done yet.
-
-- Check destination countries with UN Comtrade (reporter = the five countries, partner = destination), then add the result to [docs/destinations.md](docs/destinations.md).
-- Add a chart showing what happens to each country's waste (recycled, energy, other recovery, not recovered).
-- Related work on plastic waste trade, using UN Comtrade (HS 3915): [Plastic-Waste-Analysis](https://github.com/elizachuang/Plastic-Waste-Analysis).
-
 ## Contact
 
 **Eliza C. Huang**
