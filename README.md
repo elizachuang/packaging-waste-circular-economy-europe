@@ -235,6 +235,11 @@ The embed code for dashboard 1 is in [docs/tableau-embed.html](docs/tableau-embe
 2. The map shows only the five countries above 50% outside the EU.
 3. "Packaging" means all materials together (plastic, paper and cardboard, glass, metal, wood), material code `W1501`.
 
+## What's next?
+- 17.6% of EU packaging waste was not recovered in 2023. The data does not say where it went. In 2023 the three countries with the most unrecovered waste (Romania 57.0%, Greece 52.0%, Malta 48.9%) are also the three with the lowest recycling rates. Next step: compare with Eurostat’s landfill and treatment data.
+- Romania, Greece and Malta are furthest from the 65% target. EEA reports point to different causes (infrastructure in Malta, collection and reporting in Greece and Romania). Romania and Malta started deposit schemes in 2022, so 2024 data will show whether they helped.
+- Waste per person rose in the countries where rates fell. This is partly built into the formula, so it is not proof. My data covers all packaging together, so I can’t say which materials are easier to recycle. A material breakdown would be needed.
+
 ## Contact
 
 **Eliza C. Huang**
