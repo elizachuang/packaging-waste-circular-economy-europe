@@ -213,8 +213,8 @@ More detail in [docs/destinations.md](docs/destinations.md).
 
 [![Dashboard 1](images/dashboard.png)](https://public.tableau.com/views/PackagingwasteinEurope/Dashboard-recycleandwaste?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
-- Headline numbers: 13 of 26 below target, EU27 at 67.4%, 26 countries with 2023 data
-- Recycling rate per country, split into "meets" and "below" target
+- Headline numbers: 13 of 26 below target, EU27 at 67.4%
+- Recycling rate per country, coloured by "meets" or "below" target
 - Map of the gap to 65%
 - Scatter: change in recycling rate vs change in waste per person, 2018–2023
 - Extra kg per person needed to reach 65%
