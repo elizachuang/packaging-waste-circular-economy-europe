@@ -6,7 +6,9 @@
 
 [![Packaging waste dashboard](images/dashboard.png)](https://public.tableau.com/views/PackagingwasteinEurope/Dashboard-recycleandwaste?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
-*Click the image to open the live dashboard.*
+[![Dashboard 2: where packaging waste ends up](images/dashboard-2-where-does-packaging-end-up.png)](https://public.tableau.com/views/Wheredoeswasteendup/Dashboard-wheredoesthepackagingendup?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+*Click an image to open the live dashboard.*
 
 A learning portfolio project. Eurostat data, 2014–2023. I compare 2018 with 2023.
 
